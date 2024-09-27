@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+.gallery{
+    width: 100%;
+    max-width: 1128px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 24px auto;
+    gap: 24px;
+    list-style: none;
+}
+.gallery .gallery-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.gallery li{
+    flex: 1 1 calc(33.333% - 24px);
+    box-sizing: border-box;
+}
+
+.gallery .gallery-image:hover{
+    cursor: url('../images/cursor.png') 0 0, auto;
+}
+.basicLightbox{
+    background-color: #2E2F42CC ;
+}
